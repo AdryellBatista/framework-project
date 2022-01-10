@@ -1,0 +1,52 @@
+.home{
+    nav {
+        background-color: #090b20;
+        padding: 30px 40px 30px 70px;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        
+        .nav-item {
+            text-decoration: none;
+            margin-left: 50px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .nav-item:hover {
+            color: #0af585;
+        }
+
+        .active-link {
+            color: #fff;
+        }
+    }
+    
+    .icon-menu {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        mat-icon {
+            color: #fff;
+            font-size: 35px;
+        }
+        position: fixed;
+        right: 30px;
+        display: none;
+    }
+    @media screen and (max-width: 991px) {
+        nav {
+            padding: 30px 20px 30px 20px;
+        }
+        .nav-item {
+            width: 0;
+            display: none;
+        }
+        .icon-menu {
+            display: inline;
+        }
+    }
+}

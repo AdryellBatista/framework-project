@@ -1,0 +1,23 @@
+.albums-photos {
+    .title {
+        cursor: pointer;
+    }
+    .content-box {
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        // justify-content: center;
+        // align-items: center;
+
+        .thumbnail {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .thumbnail:hover {
+            box-shadow: 0 2px 13px 4px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+        }
+    }
+}

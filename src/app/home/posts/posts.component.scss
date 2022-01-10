@@ -1,0 +1,19 @@
+.posts {
+    .content-box {
+        .title-card {
+            font-weight: 900;
+            b {
+                color: #0af585;
+            }
+        }
+        .body-card {
+            margin-top: 10px;
+            font-weight: 300;
+        }
+        .author {
+            text-align: right;
+            margin-top: 10px;
+            color: #6b6d79;
+        }
+    }
+}

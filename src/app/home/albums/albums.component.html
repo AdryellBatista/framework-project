@@ -1,0 +1,14 @@
+<div class="albums">
+    <div class="title">Álbuns</div>
+
+    <div class="content-box">
+        <div class="card-album" *ngFor="let album of arAlbums" [routerLink]="[album.id]">
+            <div>
+                <mat-icon>photo_library</mat-icon>
+            </div>
+            <div class="card-album-content">
+                {{album.title}}
+            </div>
+        </div>
+    </div>
+</div>

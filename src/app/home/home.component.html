@@ -1,0 +1,31 @@
+<div class="home">
+    <nav>
+        <a><img src="./assets/images/logo.svg" alt=""></a>
+        <a class="nav-item" [routerLink]="['posts']" routerLinkActive="active-link">Postagens</a>
+        <a class="nav-item" [routerLink]="['albums']" routerLinkActive="active-link">Álbuns</a>
+        <a class="nav-item" [routerLink]="['todos']" routerLinkActive="active-link">To-Dos</a>
+
+        <button mat-icon-button [matMenuTriggerFor]="menu" class="icon-menu">
+            <mat-icon >menu</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item [routerLink]="['posts']" routerLinkActive="active-link">
+              <mat-icon>list</mat-icon>
+              <span>Postagens</span>
+            </button>
+            <button mat-menu-item [routerLink]="['albums']" routerLinkActive="active-link">
+              <mat-icon>insert_photo</mat-icon>
+              <span>Álbuns</span>
+            </button>
+            <button mat-menu-item [routerLink]="['todos']" routerLinkActive="active-link">
+              <mat-icon>done_all</mat-icon>
+              <span>To-Dos</span>
+            </button>
+          </mat-menu>
+    </nav>
+
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>

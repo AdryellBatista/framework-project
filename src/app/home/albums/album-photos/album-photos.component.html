@@ -1,0 +1,9 @@
+<div class="albums-photos">
+    <div class="title" [routerLink]="['../']">Albúm #{{albumId}}</div>
+
+    <div class="content-box">
+        <div *ngFor="let photo of arPhotos">
+            <img class="thumbnail" [src]="photo.thumbnailUrl" [alt]="photo.title" (click)="openPhoto(photo)">
+        </div>
+    </div>
+</div>

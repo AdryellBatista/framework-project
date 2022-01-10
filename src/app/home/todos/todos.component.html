@@ -1,0 +1,12 @@
+<div class="todos">
+
+    <div class="title">To-Dos</div>
+
+    <div class="content-box">
+        <div *ngFor="let todo of arTodos" class="todo-item">
+            <mat-checkbox [checked]="todo.completed">
+                      {{todo.title}}
+        </mat-checkbox>
+        </div>
+    </div>
+</div>
